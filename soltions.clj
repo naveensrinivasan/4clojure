@@ -42,3 +42,6 @@
 
 ;probelm 24
 (= (apply +  [1 2 3]) 6)
+
+;problem 25
+(= (filter #(= (mod %1 2) 1) #{1 2 3 4 5} ) '(1 3 5))
