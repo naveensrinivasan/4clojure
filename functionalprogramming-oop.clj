@@ -22,3 +22,5 @@
 (partition 3 (range 10))
 ;every
 (every? odd?'(1 3 5))
+;Excercise 6
+(defn prefix-of? [f s] (= f(take (count f)s)))
