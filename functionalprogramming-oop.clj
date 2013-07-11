@@ -24,3 +24,12 @@
 (every? odd?'(1 3 5))
 ;Excercise 6
 (defn prefix-of? [f s] (= f(take (count f)s)))
+
+(def tails
+     (fn [seq]
+       (map drop
+            (range (inc (count seq)))
+            			(repeat 
+            				(inc (count seq)) 
+            			seq)
+            		)))
