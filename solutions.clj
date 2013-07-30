@@ -45,3 +45,6 @@
 
 ;problem 25
 (= (filter #(= (mod %1 2) 1) #{1 2 3 4 5} ) '(1 3 5))
+
+;prolem 29
+(fn [y] (apply str (filter (fn [x] (and  (>=(int x) 65) (<=(int x) 90)) ) y )))
